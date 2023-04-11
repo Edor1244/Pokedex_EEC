@@ -2,8 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ErrorPokemon from "../img/error.gif";
+import LoadingPokemon from "../img/loading.gif";
 
-const PokedexScreen = (pokemon, loading, error) => {
+const PokedexScreen = ({pokemon, loading, error}) => {
   if (error) {
     return (
       <Container>

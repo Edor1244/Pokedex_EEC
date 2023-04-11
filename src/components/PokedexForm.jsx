@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
-const PokemonForm = (setLoading, setPokemonId, setError) => {
+const PokemonForm = ({setLoading, setPokemonId, setError}) => {
+  const [pokemon, setPokemon] = useState("");  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (pokemon !== "") {
-      setError(true);
+      setError(true)
       setLoading(true);
       const pokemonID = window.isNaN(parseInt(pokemon))
         ? pokemon.toLowerCase()
@@ -33,7 +33,7 @@ const PokemonForm = (setLoading, setPokemonId, setError) => {
           />
         </Row>
         <Row>
-          <input type="submit" className="pokemonBtn" value="" />
+          <input type="submit" className="pokemonBtn" value="Buscar Pokemon" />
         </Row>
       </form>
     </Container>

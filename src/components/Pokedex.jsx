@@ -14,12 +14,13 @@ const Pokedex = () => {
   const [pokemonID, setPokemonId] = useState(RandomId);
 
   useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon/${pokemonID}')
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonID}`)
       .then((res) => res.json())
       .then((data) => {
         setPokemon(data);
         setLoading(false);
         setError(false);
+        console.log(pokemonID);
       })
       .catch((err) => {
         setLoading(false);
