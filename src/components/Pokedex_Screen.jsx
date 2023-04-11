@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import Stat from "./Stat";
 import ErrorPokemon from "../img/error.gif";
 import LoadingPokemon from "../img/loading.gif";
 
