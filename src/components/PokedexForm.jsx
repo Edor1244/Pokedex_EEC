@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import "../Styles/PokedexForm.css";
 
 const PokemonForm = ({setLoading, setPokemonId, setError}) => {
-  const [pokemon, setPokemon] = useState("");  
+
+  const [pokemon, setPokemon] = useState("");  //Aqui es la parte donde hacemos el cambio de estado del "pokemon"
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (pokemon !== "") {
-      setError(true)
+    if (pokemon !== "") { 
+      setError(true);
       setLoading(true);
       const pokemonID = window.isNaN(parseInt(pokemon))
         ? pokemon.toLowerCase()
@@ -16,7 +19,7 @@ const PokemonForm = ({setLoading, setPokemonId, setError}) => {
       setPokemon("");
       return;
     }
-    setError(true)  
+    setError(true)
   };
   return (
     <Container>
@@ -33,7 +36,7 @@ const PokemonForm = ({setLoading, setPokemonId, setError}) => {
           />
         </Row>
         <Row>
-          <input type="submit" className="pokemonBtn" value="Busca tu pokemon en la Pokedex de EDOR33" />
+          <input type="submit" className="pokemonBtn" value="Busca tu pokemon" />
         </Row>
       </form>
     </Container>

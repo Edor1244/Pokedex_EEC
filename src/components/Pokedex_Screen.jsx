@@ -1,24 +1,38 @@
 import React from "react";
+import "../Styles/Pokedex_Screen.css"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Stat from "./Stat";
 import ErrorPokemon from "../img/error.gif";
 import LoadingPokemon from "../img/loading.gif";
 
-const PokedexScreen = ({pokemon, loading, error}) => {
+const PokedexScreen = ({pokemon, loading , error}) => {
+
   if (error) {
     return (
       <Container>
-        <div className="pokedex-screen">
+        <div className="pokedexScreen">
           <img
             src={ErrorPokemon}
             alt="Hubo un error buscando tu pokemon"
-            className="pokedex-no-screen"
           />
         </div>
       </Container>
     );
   }
+if(pokemon == 0)
+{
+  return(
+    <Container>
+    <div className="pokedexScreen">
+      <img
+        src={LoadingPokemon}
+        alt="Hubo un error buscando tu pokemon"
+      />
+    </div>
+  </Container>
+  );
+}
   return (
     <Container fluid>
       <div className="pokedexScreen"></div>

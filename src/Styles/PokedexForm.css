@@ -1,14 +1,11 @@
-/*---------------------*/
-  /* Pokedex Form */
-  /*---------------------*/
-  .pokemon-form {
+  .pokemonForm {
     display: grid;
     grid-template-columns: 1fr 50px;
     column-gap: .5rem;
     margin-top: 1em;
   }
   
-  .pokemon-input{
+  .pokemonInput{
     font-family: system-ui;
     padding: 10px;
     background-color: var(--orange);
@@ -20,23 +17,23 @@
     flex-grow: 1;
     transition: .2s;
   }
-  .pokemon-input:focus {
+  .pokemonInput:focus {
     border-color: #ffffff;
   }
   
-  .pokemon-input:focus::-webkit-input-placeholder{
+  .pokemonInput:focus::-webkit-input-placeholder{
     color: rgba(255,255,255, 1);
   
   }
-  .pokemon-input::-webkit-input-placeholder {
+  .pokemonInput::-webkit-input-placeholder {
     color: rgba(255,255,255, .8);
   }
   
-  .pokemon-btn{
+  .pokemonBtn{
     border-radius: 50%;
   }
   
-  .pokemon-btn {
+  .pokemonBtn {
     width: 40px;
     height: 40px;
     position: relative;
@@ -60,11 +57,11 @@
                       0 4.5px   0 hsl(0, 100%, 6%);
   }
   
-  .pokemon-btn:hover {
+  .pokemonBtn:hover {
     background: radial-gradient(hsl(0, 100%, 70%), hsl(0, 97%, 35%)); /* Standard syntax */
   }
   
-  .pokemon-btn:active {
+  .pokemonBtn:active {
     background: radial-gradient(hsl(0, 100%, 80%), hsl(0, 100%, 45%)); /* Standard syntax */
   
     top: 2px;

@@ -10,7 +10,7 @@
     height: 50%;
     padding: .8rem;
   }
-  .pokedex-screen {
+  .pokedexScreen {
     background: white;
     border: 2px solid black;
     border-radius: 10px;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
   }
-  .pokemon-info{
+  .pokemonInfo{
     padding: 0.8rem;
     flex-grow: 1;
     display: grid;
@@ -30,29 +30,29 @@
       "title title"
       "img   stats";
   }
-  .pokemon-name{
+  .pokemonName{
     text-align: center;
     text-transform: capitalize;
     grid-area: title;
     font-weight: 700;
   }
-  .pokemon-img{
+  .pokemonImg{
     width: 100%;
     transform: scale(1.2);
     align-self: center;
     grid-area: img;
   }
-  .pokemon-stats{
+  .pokemonStats{
     grid-area: stats;
   }
-  .pokemon-stat{
+  .pokemonStats{
     font-size: 0.9rem;
   }
   .pokedex-no-screen{
     width: 100%;
     height: 100%;
   }
-  .stat-name{
+  .pokemonName{
     text-transform: capitalize;
   }
   
