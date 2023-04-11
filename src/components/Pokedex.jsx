@@ -20,7 +20,6 @@ const Pokedex = () => {
         setPokemon(data);
         setLoading(false);
         setError(false);
-        console.log(pokemonID);
       })
       .catch((err) => {
         setLoading(false);

@@ -33,7 +33,7 @@ const PokemonForm = ({setLoading, setPokemonId, setError}) => {
           />
         </Row>
         <Row>
-          <input type="submit" className="pokemonBtn" value="Buscar Pokemon" />
+          <input type="submit" className="pokemonBtn" value="Busca tu pokemon en la Pokedex de EDOR33" />
         </Row>
       </form>
     </Container>
